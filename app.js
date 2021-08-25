@@ -57,3 +57,25 @@
 // boboboy.fullname();
 
 // second "this"
+
+// console.log(this);
+
+// const john = {
+//   name: "john",
+//   lastname: "boboe",
+//   fullname: function () {
+//     console.log(`my full name is ${this.firstname} ${this.lastname}  `);
+//   },
+// };
+// const bobo = {
+//   name: "bobo",
+//   lastname: "ram",
+//   fullname: function () {
+//     console.log(`my full name is ${this.firstname} ${this.lastname}  `);
+//   },
+// };
+
+
+function createperson (){
+    
+}
