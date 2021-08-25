@@ -31,3 +31,29 @@
 // console.log(person["random-value"]);
 // console.log(person[random]);
 
+// this
+// points to the left of dot
+
+// const john = {
+//   firstname: "john",
+//   lastname: "boboe",
+//   fullname: function () {
+//     console.log(
+//       `my full name is ${this.firstname} ${this.lastname} `
+//     );
+//     console.log(this);
+//   },
+// };
+// const boboboy = {
+//   firstname: "boboboy5",
+//   lastname: "bobo6",
+//   fullname: function () {
+//       console.log(this);
+//     console.log(`my full name is ${this.firstname} ${this.lastname}  `);
+//   },
+// };
+
+// john.fullname();
+// boboboy.fullname();
+
+// second "this"
