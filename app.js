@@ -75,32 +75,46 @@
 //   },
 // };
 
-function Person(firstname, lastname) {
-  this.firstname = firstname;
-  this.lastname = lastname;
-  this.fullname = function () {
-    console.log(
-      `my full name is ${this.firstname} ${this.lastname} i love react  `
-    );
-  };
-  console.log(this);
-}
-const johnr = new Person("johnr", "deoe");
-johnr.fullname();
-const johnrxx = new Person("johnxx", "deoexx");
-johnrxx.fullname();
+// const johnr = new Person("johnr", "deoe");
+// johnr.fullname();
+// const johnrxx = new Person("johnxx", "deoexx");
+// johnrxx.fullname();
 
-function createperson(firstname, lastname) {
-  return {
-    firstname: firstname,
-    lastname: lastname,
-    fullname: function () {
-      console.log(`my full name is ${this.firstname} ${this.lastname}  `);
-    },
-  };
-}
+// function createperson(firstname, lastname) {
+//   return {
+//     firstname: firstname,
+//     lastname: lastname,
+//     fullname: function () {
+//       console.log(`my full name is ${this.firstname} ${this.lastname}  `);
+//     },
+//   };
+// }
 
-const john = createperson("john", "ram");
-john.fullname();
-const johnb = createperson("johedn", "wderam");
-johnb.fullname();
+// const john = createperson("john", "ram");
+// john.fullname();
+// const johnb = createperson("johedn", "wderam");
+// johnb.fullname();
+
+// function Person(firstname, lastname) {
+//   this.firstname = firstname;
+//   this.lastname = lastname;
+//   this.fullname = function () {
+//     console.log(
+//       `my full name is ${this.firstname} ${this.lastname} i love react  `
+//     );
+//   };
+// }
+
+// const john= new Person('john','bobo')
+// // console.log(john.constructor);
+
+// const bob = {};
+// console.log(bob.constructor);
+
+// const list = [];
+// console.log(list.constructor);
+// const sayhi = function () {};
+// console.log(sayhi.constructor);
+
+// const susu = new john.constructor("susu", "bo");
+// susu.fullname();
