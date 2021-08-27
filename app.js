@@ -157,38 +157,48 @@
 // john.deposit(500);
 // console.log(john.bank);
 
-const john = {
-  name: "john",
-  age: 1350,
-  greet: function () {
-      console.log(this);
-    console.log(` hello, i'm ${this.name} and i'm ${this.age} years old`);
-},
-};
-const susan = { name: "susan", age: 550 };
+// const john = {
+//   name: "john",
+//   age: 1350,
+// };
+// const susan = {
+//   name: "susan",
+//   age: 550,
+// };
 
-// john.greet();
+// function greet(city ,country) {
+//   console.log(this);
+//   console.log(` hello, i'm ${this.name} and i'm ${this.age} years old and i live in ${city},${country}`);
+// }
 
-function greet() {
+// // // greet.call(john,'sanfran','us');
+// // // greet.call(susan, "sanfran", "us");
+// // // greet.call({ name: "peter", age: 55 }, "sanfran", "us");
+
+// // greet.apply(john,['san-fran','u-s']);
+// // greet.apply(susan);
+// // greet.apply({ name: "peter", age: 55 });
+
+// // asign,call it laetr
+// const susangreet=greet.bind(susan,'cali','colu')
+// susangreet()
+
+const counter = {
+  count: 0,
+  increment() {
     console.log(this);
-  console.log(` hello, i'm ${this.name} and i'm ${this.age} years old`);
-}
+    this.count++;
+    console.log(this.count);
+  },
+};
 
+const btn = document.querySelector(".incriment");
+// btn.addEventListener('click',counter.increment)
 
+// maybe
+// btn.addEventListener('click',counter.increment.bind(counter))
 
-
-greet.call(john)
-greet.call(susan)
-greet.call({name:'peter',age:55})
-
-
-john.greet.call(susan)
-// greet();
-
-// const secondgreet=john.greet
-
-// secondgreet()
-
-// 
-// raman //
-// 
+// for sure
+const increment = counter.increment.bind(counter);
+btn.addEventListener("click", increment);
+btn.removeEventListener("click", increment);
