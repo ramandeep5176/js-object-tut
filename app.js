@@ -75,13 +75,22 @@
 //   },
 // };
 
+function Person(firstname, lastname) {
+  this.firstname = firstname;
+  this.lastname = lastname;
+  this.fullname = function () {
+    console.log(
+      `my full name is ${this.firstname} ${this.lastname} i love react  `
+    );
+  };
+  console.log(this);
+}
+const johnr = new Person("johnr", "deoe");
+johnr.fullname();
+const johnrxx = new Person("johnxx", "deoexx");
+johnrxx.fullname();
 
-
-
-
-
-
-function createperson(firstname,lastname) {
+function createperson(firstname, lastname) {
   return {
     firstname: firstname,
     lastname: lastname,
@@ -91,7 +100,7 @@ function createperson(firstname,lastname) {
   };
 }
 
-const john = createperson('john','ram');
-john.fullname()
-const johnb = createperson('johedn','wderam');
-johnb.fullname()
+const john = createperson("john", "ram");
+john.fullname();
+const johnb = createperson("johedn", "wderam");
+johnb.fullname();
