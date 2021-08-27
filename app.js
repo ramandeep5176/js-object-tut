@@ -76,6 +76,22 @@
 // };
 
 
-function createperson (){
-    
+
+
+
+
+
+function createperson(firstname,lastname) {
+  return {
+    firstname: firstname,
+    lastname: lastname,
+    fullname: function () {
+      console.log(`my full name is ${this.firstname} ${this.lastname}  `);
+    },
+  };
 }
+
+const john = createperson('john','ram');
+john.fullname()
+const johnb = createperson('johedn','wderam');
+johnb.fullname()
