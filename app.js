@@ -156,3 +156,39 @@
 // console.log(john.name);
 // john.deposit(500);
 // console.log(john.bank);
+
+const john = {
+  name: "john",
+  age: 1350,
+  greet: function () {
+      console.log(this);
+    console.log(` hello, i'm ${this.name} and i'm ${this.age} years old`);
+},
+};
+const susan = { name: "susan", age: 550 };
+
+// john.greet();
+
+function greet() {
+    console.log(this);
+  console.log(` hello, i'm ${this.name} and i'm ${this.age} years old`);
+}
+
+
+
+
+greet.call(john)
+greet.call(susan)
+greet.call({name:'peter',age:55})
+
+
+john.greet.call(susan)
+// greet();
+
+// const secondgreet=john.greet
+
+// secondgreet()
+
+// 
+// raman //
+// 
