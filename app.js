@@ -119,22 +119,40 @@
 // const susu = new john.constructor("susu", "bo");
 // susu.fullname();
 
-function account(name, initialbalance) {
-  this.name = name;
-  this.balance = initialbalance;
-}
+// function account(name, initialbalance) {
+//   this.name = name;
+//   this.balance = initialbalance;
+// //   this.bank='bank of amrica'
+// }
 
-const john = new account("john", 200);
-const bob = new account("bob", 2500);
+// const john = new account("john", 200);
+// const bob = new account("bob", 2500);
 
-account.prototype.bank = "chase";
-account.prototype.deposit = function (amount) {
-  this.balance += amount;
-  console.log(`hello ${this.name}, your balance is $${this.balance}`);
-};
+// account.prototype.bank = "chase";
+// account.prototype.deposit = function (amount) {
+//   this.balance += amount;
+//   console.log(`hello ${this.name}, your balance is $${this.balance}`);
+// };
 
-console.log(john.bank);
-console.log(bob);
+// // console.log(john.bank);
+// console.log(bob);
+// console.log({});
+// console.log([]);
 
-john.deposit(300)
-bob.deposit(300)
+// class account {
+//   constructor(name, initialbalance) {
+//     this.name = name;
+//     this.balance = initialbalance;
+//   }
+//   bank='rraammaann'
+//   deposit(amount) {
+//     this.balance += amount;
+//     console.log(`hello ${this.name}, your balance is $${this.balance}`);
+//   }
+// }
+
+// const john = new account("john", 50);
+// console.log(john);
+// console.log(john.name);
+// john.deposit(500);
+// console.log(john.bank);
